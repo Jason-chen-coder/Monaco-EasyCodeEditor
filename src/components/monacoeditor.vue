@@ -12,6 +12,8 @@ import * as monaco from 'monaco-editor'
 // import 'monaco-editor/esm/vs/basic-languages/sql/sql.contribution'
 // import 'monaco-editor/esm/vs/basic-languages/python/python.contribution'
 // import 'monaco-editor/esm/vs/editor/contrib/find/findController.js'
+import { registerAllAvailableLanguages } from 'monaco-ace-tokenizer/lib/lazy'
+registerAllAvailableLanguages();
 
 export default {
   name: 'AcMonaco',
